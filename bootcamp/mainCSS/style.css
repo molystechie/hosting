@@ -1,0 +1,211 @@
+
+/* styling day2_index.html */
+.body-day2{
+    margin: 20px 10px;
+}
+
+.main-content{
+    max-width: 70rem;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    color: blue;
+}
+h1, h4, img{
+    align-self: center;
+}
+
+p span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+div input,textarea, label, select, button{
+    padding: 5px;
+    margin: 15px;
+}
+
+div input,textarea,select{
+    border: thin solid green;
+}
+
+
+
+
+
+/* Create custom radio button */
+div input[type="radio"]  {
+     /* removes the browser's native UI design and allows you to style your own.  */
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+
+ /* create custom radiobutton appearance */
+     display: inline-block;
+     position: relative;
+     height: 15px;
+     width: 15px;
+     top: 15px;
+     border-radius: 50px;
+     margin-right: 7px;
+     outline: none;
+     cursor: pointer;
+
+    /* background-color only for content */
+     background-color: #f1f1f1;
+     border: 1px solid green;
+
+  }
+
+div input[type="radio"]:checked::before {
+    position: absolute;
+    font: 10px/1 'Open Sans', sans-serif;
+    left: 4px;
+    top: 1px;
+    content: '\02143';
+    transform: rotate(40deg);
+    color: #fff;
+ }
+
+div input[type="radio"]:checked {
+     background-color: green;
+  }
+
+div input[type="radio"]:hover{
+       background-color: green;
+  }
+
+
+
+/* Create custom checkbox; */
+  div input[type="checkbox"]  {
+    /* removes the browser's native UI design and allows you to style your own.  */
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+/* create custom checkbox appearance */
+    display: inline-block;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    top: 15px;
+    border-radius: 3px;
+    margin-right: 7px;
+    outline: none;
+    cursor: pointer;
+
+   /* background-color only for content */
+    background-color: #f1f1f1;
+    border: 1px solid green;
+ }
+
+ div input[type="checkbox"]:checked::before {
+    position: absolute;
+    font: 10px/1 'Open Sans', sans-serif;
+    left: 4px;
+    top: 1px;
+    content: '\02143';
+    transform: rotate(40deg);
+    color: #fff;
+ }
+
+div input[type="checkbox"]:checked {
+     background-color: green;
+  }
+
+div input[type="checkbox"]:hover{
+       background-color: green;
+  }
+
+
+#btnSubmit{
+    margin-top: 80px;
+}
+
+div textarea{
+    margin-bottom: -70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling day3_index.html */
+#body-day3{
+    margin: 20px 10px;
+    font-family :Verdana, arial, Tahoma, "Times New Roman" Georgia, serif, sans-serif;
+
+    background-color:#c9c9c9;
+
+}
+
+
+
+.boxShadow{
+    min-width:52rem;
+    max-width:78rem;
+    margin: 40px auto;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border: 1px solid lightgray;
+
+    box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+          -moz-box-shadow: 0 0 10px  5px rgba(0,0,0,0.6);
+          -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+          -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+  }
+
+
+#radioBtnOper{
+    width:28rem;
+}
+
+
+
+
+
+
+
+/* styling day1_index.html Fakescodes site */
+
+.cover {
+    background: url('../img/images.jpg') no-repeat center;
+    background-size:fit;
+}
+
+
+.transbox {
+    background-color: blueviolet;
+    color:black;
+
+}
+
+.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+
+ .transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+section{
+    margin: 20px;
+}

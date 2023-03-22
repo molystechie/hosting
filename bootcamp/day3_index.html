@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10000Coders_day3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainCSS/style.css">
+
+</head>
+</head>
+<body id="body-day3">
+    <section class="boxShadow">
+        <div class="container">
+                <div class="text-center">
+                    <img src="img/10000Coders.png" alt="10000Coders image">
+                    <span class='h1 text-center d-block'>Calculator</span>
+                </div>
+            <div class="row">
+                <div class="col-sm-5 ">
+                    <form id="calcSumForm">
+                        <small class="d-none text-danger text-center" id='Num1Error'>Either First Number is missing! or Invalid input(Letters/symbols not allowed!)</small>
+                        <div class="d-flex flex-row  ">
+                            <label for="first-number">Enter First Number:</label>
+                            <input type="number" class="form-inline ml-4" id="txtboxnum1" placeholder="First Number">
+                        </div>
+
+                        <div class="d-flex flex-row ">
+                            <label for="second-number">Enter Second Number:</label>
+                            <input type="number" class="form-inline ml-1" id="txtboxnum2" placeholder="Second Number">
+                        </div>
+                        <small class="d-none text-danger text-center" id='Num2Error'>Either Second Number is missing! or Invalid input(Letters/symbols not allowed!)</small>
+
+                    </form>
+                </div>
+                <div class="col-sm-4 ">
+                        <small class="d-none text-danger text-center" id='operError'>Choose an operation below!</small>
+                    <span class="h5 d-flex flex-row justify-content-center">Choose an operation below</span>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div >
+                            <label for="addbtn">Add</label>
+                            <input type="radio" name="operation" value='+' >
+                        </div>
+                        <div >
+                            <label for="addbtn">Minus</label>
+                            <input type="radio" name="operation" value='-'>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div>
+                            <label for="addbtn">Multiply</label>
+                            <input type="radio" name="operation" value='*'>
+                        </div>
+
+                        <div>
+                            <label for="addbtn">Divide</label>
+                            <input type="radio" name="operation" value='/'>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <small class="d-none text-danger" id='operError'>No operation selected! Please select operation above</small>
+                        <br>
+                        <button type="button" class="btn btn-primary ml-5 align-self-center" id='btnCompute' >Compute</button>
+                    </div>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <div class=" d-flex flex-row  justify-content-center ">
+                        <label for="ans" class="font-weight-bold align-self-center" id ='calcAns'>Result...</label>
+                    </div>
+                    <!-- <div class="row align-items-center"> -->
+                      <!-- <div class="col align-self-center">
+                            <label for="ans" class="font-weight-bold border border-info" id ='calcAns'>Result...</label>
+
+                      </div> -->
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="mainJS/day3_jscript.js"></script>
+</body>
+</html>
