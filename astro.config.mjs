@@ -1,5 +1,9 @@
 import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind";
+
+// https://astro.build/config
 export default defineConfig({
-    site: 'https://molystechie.github.io',
-    base: '/demo_hosting'
-});
+  integrations: [tailwind()]
+} // site: 'https://molystechie.github.io',
+// base: '/demo_hosting'
+);
